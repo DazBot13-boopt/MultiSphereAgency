@@ -474,7 +474,7 @@ h6,
 
 .bg-header {
     position: relative;
-    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../bnr.jpg) center center no-repeat;
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../bnr.webp) center center no-repeat;
     background-size: cover;
     animation: moveBackground 10s infinite linear;
 }
@@ -615,7 +615,7 @@ h6,
 
 
 .check{
-    background-image: url('../pattern-1.png');
+    background-image: url('../pattern-1.webp');
 }
 
 
@@ -682,11 +682,11 @@ h6,
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url('../img/pattern-1.png');
+    background-image: url('../img/pattern-1.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    animation: rotateBackground 5s linear infinite;
+    animation: rotateBackground 15s linear infinite;
     z-index: 1;
 }
 @keyframes rotateBackground {

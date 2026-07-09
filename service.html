@@ -11,6 +11,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//code.jquery.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
@@ -22,6 +25,53 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://multisphereservices.com/service.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MultiSphere Agency">
+    <meta property="og:title" content="Nos Services - MultiSphere Agency">
+    <meta property="og:description" content="Découvrez les 5 expertises de MultiSphere Agency : événementiel, communication digitale, développement web/mobile, cybersécurité et gestion administrative.">
+    <meta property="og:url" content="https://multisphereservices.com/service.html">
+    <meta property="og:image" content="https://multisphereservices.com/img/logo.webp">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nos Services - MultiSphere Agency">
+    <meta name="twitter:description" content="Découvrez les 5 expertises de MultiSphere Agency : événementiel, communication digitale, développement web/mobile, cybersécurité et gestion administrative.">
+    <meta name="twitter:image" content="https://multisphereservices.com/img/logo.webp">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "MultiSphere Agency",
+        "url": "https://multisphereservices.com",
+        "logo": "https://multisphereservices.com/img/logo.webp",
+        "description": "Agence pluridisciplinaire : événementiel, communication digitale, développement web/mobile, cybersécurité, gestion administrative.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+229-01-63-91-88-96",
+            "contactType": "customer service",
+            "email": "multisphere.agency@gmail.com"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Abomey-Calavi",
+            "addressCountry": "BJ"
+        },
+        "sameAs": [
+            "https://www.facebook.com/people/Multisphere-Agency/61592002491375/",
+            "https://www.instagram.com/multisphere.agency",
+            "https://www.linkedin.com/in/multisphere-agency-a62980420/",
+            "https://www.tiktok.com/@multisphere.agenc"
+        ]
+    }
+    </script>
 
     <style>
         /* Override the base template icon style: clean round white circle */
@@ -129,7 +179,7 @@
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <a href="index.html" class="navbar-brand p-0">
-                <h1 class="m-0"><img src="img/logo.jpeg" alt="MultiSphere Agency Logo" class="img-fluid" style="max-height: 80px; border-radius: 8px;"></h1>
+                <h1 class="m-0"><img src="img/logo.webp" alt="MultiSphere Agency Logo" class="img-fluid" style="max-height: 80px; border-radius: 8px;" width="80" height="80"></h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
@@ -165,8 +215,8 @@
         </div>
     </div>
 
-    <img src="img/one1111.png" class="rain"/>
-    <img src="img/two222.png" class="rain"/>
+    <img src="img/one1111.webp" class="rain" alt="" loading="lazy" width="1200" height="100"/>
+    <img src="img/two222.webp" class="rain" alt="" loading="lazy" width="1200" height="100"/>
 
     <!-- Service Cards Grid -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -177,7 +227,7 @@
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.2s" id="evenementiel">
                     <div class="service-item bg-light rounded d-flex flex-column align-items-center text-center p-4 h-100">
                         <div class="service-icon">
-                            <img src="mss%20(9).gif" alt="Événementiel">
+                            <video autoplay loop muted playsinline width="80" height="80" style="border-radius: 50%; object-fit: contain;" loading="lazy"><source src="mss-9.mp4" type="video/mp4"></video>
                         </div>
                         <h4 class="mb-3">Événementiel</h4>
                         <p class="m-0">Conception, organisation et pilotage d'événements d'entreprise sur mesure.</p>
@@ -195,7 +245,7 @@
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.4s" id="communication">
                     <div class="service-item bg-light rounded d-flex flex-column align-items-center text-center p-4 h-100">
                         <div class="service-icon">
-                            <img src="mss%20(2).gif" alt="Communication & Marketing Digital">
+                            <video autoplay loop muted playsinline width="80" height="80" style="border-radius: 50%; object-fit: contain;" loading="lazy"><source src="mss-2.mp4" type="video/mp4"></video>
                         </div>
                         <h4 class="mb-3">Communication & Marketing Digital</h4>
                         <p class="m-0">Faire rayonner votre marque, en ligne et hors ligne.</p>
@@ -214,7 +264,7 @@
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s" id="web">
                     <div class="service-item bg-light rounded d-flex flex-column align-items-center text-center p-4 h-100">
                         <div class="service-icon">
-                            <img src="mss%20(5).gif" alt="Développement Web & Mobile">
+                            <video autoplay loop muted playsinline width="80" height="80" style="border-radius: 50%; object-fit: contain;" loading="lazy"><source src="mss-5.mp4" type="video/mp4"></video>
                         </div>
                         <h4 class="mb-3">Développement Web & Mobile</h4>
                         <p class="m-0">Des solutions numériques modernes, performantes et sur mesure.</p>
@@ -232,7 +282,7 @@
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.2s" id="cybersecurite">
                     <div class="service-item bg-light rounded d-flex flex-column align-items-center text-center p-4 h-100">
                         <div class="service-icon">
-                            <img src="mss%20(10).gif" alt="Cybersécurité">
+                            <video autoplay loop muted playsinline width="80" height="80" style="border-radius: 50%; object-fit: contain;" loading="lazy"><source src="mss-10.mp4" type="video/mp4"></video>
                         </div>
                         <h4 class="mb-3">Cybersécurité</h4>
                         <p class="m-0">Protéger vos données, vos plateformes et vos événements numériques.</p>
@@ -250,7 +300,7 @@
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.4s" id="gestion">
                     <div class="service-item bg-light rounded d-flex flex-column align-items-center text-center p-4 h-100">
                         <div class="service-icon">
-                            <img src="mss%2013.gif" alt="Gestion Administrative & Financière">
+                            <video autoplay loop muted playsinline width="80" height="80" style="border-radius: 50%; object-fit: contain;" loading="lazy"><source src="mss-13.mp4" type="video/mp4"></video>
                         </div>
                         <h4 class="mb-3">Gestion Administrative & Financière</h4>
                         <p class="m-0">Piloter vos projets et vos événements avec rigueur.</p>
@@ -463,15 +513,15 @@
         </a>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="lib/wow/wow.min.js" defer></script>
+    <script src="lib/easing/easing.min.js" defer></script>
+    <script src="lib/waypoints/waypoints.min.js" defer></script>
+    <script src="lib/counterup/counterup.min.js" defer></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>

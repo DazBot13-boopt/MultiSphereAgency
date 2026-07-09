@@ -11,6 +11,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//code.jquery.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
@@ -22,6 +25,52 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://multisphereservices.com/contact.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MultiSphere Agency">
+    <meta property="og:title" content="Contact - MultiSphere Agency">
+    <meta property="og:description" content="Contactez MultiSphere Agency pour discuter de votre projet : événementiel, communication, développement, cybersécurité et gestion administrative.">
+    <meta property="og:url" content="https://multisphereservices.com/contact.html">
+    <meta property="og:image" content="https://multisphereservices.com/img/logo.webp">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact - MultiSphere Agency">
+    <meta name="twitter:description" content="Contactez MultiSphere Agency pour discuter de votre projet.">
+    <meta name="twitter:image" content="https://multisphereservices.com/img/logo.webp">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "MultiSphere Agency",
+        "url": "https://multisphereservices.com",
+        "logo": "https://multisphereservices.com/img/logo.webp",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+229-01-63-91-88-96",
+            "contactType": "customer service",
+            "email": "multisphere.agency@gmail.com"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Abomey-Calavi",
+            "addressCountry": "BJ"
+        },
+        "sameAs": [
+            "https://www.facebook.com/people/Multisphere-Agency/61592002491375/",
+            "https://www.instagram.com/multisphere.agency",
+            "https://www.linkedin.com/in/multisphere-agency-a62980420/",
+            "https://www.tiktok.com/@multisphere.agenc"
+        ]
+    }
+    </script>
 </head>
 
 <body>
@@ -57,7 +106,7 @@
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <a href="index.html" class="navbar-brand p-0">
-                <h1 class="m-0"><img src="img/logo.jpeg" alt="MultiSphere Agency Logo" class="img-fluid" style="max-height: 80px; border-radius: 8px;"></h1>
+                <h1 class="m-0"><img src="img/logo.webp" alt="MultiSphere Agency Logo" class="img-fluid" style="max-height: 80px; border-radius: 8px;" width="80" height="80"></h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
@@ -168,7 +217,7 @@
                 </div>
                 <div class="col-lg-6" style="min-height: 550px;">
                     <div class="position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100 wow zoomIn" data-wow-delay="0.9s" src="cont.gif" style="object-fit:cover; border-radius: 8px;">
+                        <video class="position-absolute w-100 h-100 wow zoomIn" data-wow-delay="0.9s" autoplay loop muted playsinline style="object-fit:cover; border-radius: 8px;" loading="lazy" alt="Contact MultiSphere Agency"><source src="cont.mp4" type="video/mp4"></video>
                     </div>
                 </div>
             </div>
@@ -297,15 +346,15 @@
         </a>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="lib/wow/wow.min.js" defer></script>
+    <script src="lib/easing/easing.min.js" defer></script>
+    <script src="lib/waypoints/waypoints.min.js" defer></script>
+    <script src="lib/counterup/counterup.min.js" defer></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 
     <!-- Google Sheets Form Submission -->
     <script>

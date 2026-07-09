@@ -127,41 +127,17 @@
  // Disable Right Click
  document.addEventListener("contextmenu", (event) => event.preventDefault());
 
- // Disable Developer Tools
+ // Disable Developer Tools key combos
  document.addEventListener("keydown", (event) => {
     if (
-     event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "i") || // Ctrl + Shift + I
-     event.ctrlKey && event.shiftKey && (event.key === "J" || event.key === "j") || // Ctrl + Shift + J
-     event.ctrlKey && (event.key === "U" || event.key === "u") || // Ctrl + U
-     event.key === "F12" // F12
+     event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "i") ||
+     event.ctrlKey && event.shiftKey && (event.key === "J" || event.key === "j") ||
+     event.ctrlKey && (event.key === "U" || event.key === "u") ||
+     event.key === "F12"
     ) {
      event.preventDefault();
     }
  });
-
- // Detect and Close DevTools
- (function () {
-    const element = new Image();
-    Object.defineProperty(element, "id", {
-     get: function () {
-        alert("Developer tools are disabled on this site.");
-        window.location.href = "about:blank";
-     },
-    });
-    console.log("%c", element);
- })();
-
- // Prevent Inspect Element by Disabling Console
- setInterval(() => {
-    if (window.outerHeight - window.innerHeight > 200 || window.outerWidth - window.innerWidth > 200) {
-     document.body.innerHTML = "<h2 style='text-align: center; color: red;'>Inspecting is disabled on this site.</h2>";
-     setTimeout(() => {
-        window.location.href = "about:blank";
-     }, 1000);
-    }
- }, 1000);
-
-
 
     // This will allow the submenu to open on hover
     document.querySelectorAll('.dropdown-submenu').forEach(function (submenu) {
