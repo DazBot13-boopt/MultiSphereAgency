@@ -6,10 +6,9 @@
     <title>MultiSphere Agency - L'union des expertises, la force de vos projets.</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="description" content="MultiSphere Agency : événementiel, communication digitale, développement web/mobile, cybersécurité, gestion administrative. L'union des expertises, la force de vos projets.">
-    <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon">
-
-    <!-- Favicon -->
-    <link href="img/logo.jpeg" rel="icon">
+    <link rel="shortcut icon" href="img/logo.webp" type="image/webp">
+    <link rel="icon" href="img/logo.webp" type="image/webp">
+    <link rel="apple-touch-icon" href="img/logo.webp">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -90,7 +89,7 @@
     <!-- Spinner End -->
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/2290163918896" target="_blank" class="whatsapp-button">
+    <a href="https://wa.me/2290163918896?text=Bonjour%20MultiSphere%20Agency%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20services." target="_blank" class="whatsapp-button">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
     </a>
 
@@ -110,7 +109,7 @@
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/people/Multisphere-Agency/61592002491375/" target="_blank"><i class="fab fa-facebook-f fw-normal"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/in/multisphere-agency-a62980420/" target="_blank"><i class="fab fa-linkedin-in fw-normal"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/multisphere.agency" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="https://wa.me/2290163918896" target="_blank"><i class="fab fa-whatsapp fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="https://wa.me/2290163918896?text=Bonjour%20MultiSphere%20Agency%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20services." target="_blank"><i class="fab fa-whatsapp fw-normal"></i></a>
                 </div>
             </div>
         </div>
@@ -157,6 +156,7 @@
             Your browser does not support the video tag.
         </video>
         <div class="hero-content left-align">
+            <img src="img/logo.webp" alt="MultiSphere Agency" class="hero-logo">
             <h2 class="slide-in" id="title" style="font-family:'Tangerine', cursive ; color:#fff ">MultiSphere Agency</h2>
             <p class="slide-in word-by-word" id="description">L'union des expertises, la force de vos projets. De l'événementiel à la cybersécurité, en passant par la communication digitale, le développement web/mobile et la gestion administrative — nous rassemblons tous les métiers dont votre projet a besoin, sous un même toit.</p>
             <button class="cta slide-in"><a href="service.html">Découvrir nos services</a></button>
@@ -222,6 +222,26 @@
             z-index: 1;
             margin-top: 130px;
             max-width: 600px;
+        }
+
+        /* Hero logo animation */
+        .hero-logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            animation: heroLogoSpin 8s linear infinite;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+        }
+
+        @keyframes heroLogoSpin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         h2 {
@@ -342,12 +362,14 @@
                 padding: 30px;
             }
             .hero-content { max-width: 90%; }
+            .hero-logo { width: 80px; height: 80px; }
             h2 { font-size: 50px; }
             p { font-size: 16px; }
             .cta { font-size: 1em; }
         }
 
         @media (max-width: 768px) {
+            .hero-logo { width: 70px; height: 70px; }
             h2 { font-size: 40px; }
             p { font-size: 14px; }
             .cta { font-size: 0.9em; padding: 10px 20px; }
@@ -355,6 +377,7 @@
 
         @media (max-width: 480px) {
             .hero { padding: 20px; }
+            .hero-logo { width: 60px; height: 60px; }
             h2 { font-size: 32px; }
             p { font-size: 13px; }
             .cta { font-size: 0.8em; padding: 8px 16px; }
