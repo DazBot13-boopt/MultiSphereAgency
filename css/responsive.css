@@ -474,7 +474,7 @@ img, video, iframe {
         text-align: center;
     }
 
-    /* ---- NAVBAR MOBILE MODERNE & PRO ---- */
+    /* ---- NAVBAR MOBILE : LOGO CENTRÉ ---- */
     
     /* Conteneur navbar */
     .navbar-dark.px-5 {
@@ -482,9 +482,25 @@ img, video, iframe {
         padding-right: 15px !important;
     }
 
+    /* Centrer le logo sur mobile */
+    .navbar-dark {
+        justify-content: center !important;
+    }
+    .navbar-dark .navbar-brand {
+        margin: 0 auto !important;
+    }
+
     /* Logo plus petit */
     .navbar-dark .navbar-brand h1 img {
-        max-height: 45px !important;
+        max-height: 42px !important;
+    }
+
+    /* Ajouter un trait fin en bas de la navbar */
+    .navbar-dark {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+        background: rgba(255, 255, 255, 0.95) !important;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
 
     /* ---- CACHER LE BURGER MENU (on a la bottom nav) ---- */
