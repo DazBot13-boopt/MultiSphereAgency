@@ -487,124 +487,12 @@ img, video, iframe {
         max-height: 45px !important;
     }
 
-    /* ---- HAMBURGER TOGGLER ---- */
+    /* ---- CACHER LE BURGER MENU (on a la bottom nav) ---- */
     .navbar-toggler {
-        border: 2px solid var(--primary) !important;
-        border-radius: 8px !important;
-        padding: 8px 10px !important;
-        transition: all 0.3s ease !important;
-        background: transparent !important;
+        display: none !important;
     }
-    .navbar-toggler:focus {
-        box-shadow: 0 0 0 3px rgba(22, 86, 173, 0.25) !important;
-        outline: none !important;
-    }
-    .navbar-toggler .fa-bars {
-        font-size: 20px;
-        color: var(--primary);
-        display: inline-block;
-        transition: transform 0.4s ease;
-    }
-    .navbar-toggler[aria-expanded="true"] .fa-bars {
-        transform: rotate(90deg);
-    }
-    .navbar-toggler[aria-expanded="true"] .fa-bars::before {
-        content: "\f00d";
-    }
-
-    /* ---- MENU DÉROULANT ---- */
     .navbar-collapse {
-        background: #ffffff;
-        border-radius: 0 0 16px 16px;
-        box-shadow: 0 15px 40px rgba(9, 30, 62, 0.15);
-        max-height: 80vh;
-        overflow-y: auto;
-        transition: all 0.3s ease;
-    }
-
-    .navbar-nav.ms-auto.py-0 {
-        padding: 8px 10px !important;
-    }
-
-    /* ---- LIENS DE NAVIGATION ---- */
-    .navbar-dark .navbar-nav .nav-link {
-        padding: 12px 16px !important;
-        margin: 2px 0 !important;
-        color: #333 !important;
-        font-size: 15px !important;
-        font-weight: 600 !important;
-        border-radius: 10px !important;
-        transition: all 0.25s ease !important;
-        position: relative !important;
-        border-left: 3px solid transparent !important;
-    }
-
-    /* Hover */
-    .navbar-dark .navbar-nav .nav-link:hover {
-        background: #f0f4ff !important;
-        color: var(--primary) !important;
-        border-left-color: var(--primary) !important;
-        padding-left: 20px !important;
-    }
-
-    /* Lien actif */
-    .navbar-dark .navbar-nav .nav-link.active {
-        background: #e8f0fe !important;
-        color: var(--primary) !important;
-        border-left: 3px solid var(--primary) !important;
-        font-weight: 700 !important;
-    }
-
-    /* ---- SERVICES DROPDOWN ---- */
-    .nav-item.dropdown .dropdown-toggle {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .nav-item.dropdown .dropdown-toggle::after {
-        content: "\f078";
-        font-family: "Font Awesome 6 Free";
-        font-weight: 900;
-        border: none;
-        margin-left: auto;
-        font-size: 12px;
-        transition: transform 0.3s ease;
-        color: var(--primary);
-    }
-    .nav-item.dropdown.show .dropdown-toggle::after {
-        transform: rotate(180deg);
-    }
-
-    /* Sous-menu */
-    .nav-item.dropdown .dropdown-menu {
-        background: #f8faff !important;
-        border: 1px solid #e8edf5 !important;
-        border-radius: 12px !important;
-        padding: 6px !important;
-        margin-top: 4px !important;
-        box-shadow: none !important;
-    }
-    .nav-item.dropdown .dropdown-item {
-        padding: 10px 16px !important;
-        font-size: 14px !important;
-        font-weight: 500 !important;
-        color: #444 !important;
-        border-radius: 8px !important;
-        transition: all 0.2s ease !important;
-        border-left: 3px solid transparent !important;
-    }
-    .nav-item.dropdown .dropdown-item:hover {
-        background: #eef4ff !important;
-        color: var(--primary) !important;
-        border-left-color: var(--primary) !important;
-        padding-left: 22px !important;
-    }
-
-    /* Supprimer l'ancien style dropdown mobile qui pouvait poser conflit */
-    .dropdown-submenu > .dropdown-menu {
-        position: static !important;
-        left: auto !important;
-        top: auto !important;
+        display: none !important;
     }
 
     /* ---- Page headers (inner pages) ---- */
