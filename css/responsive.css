@@ -900,6 +900,7 @@ img, video, iframe {
    ============================================================ */
 @media print {
     .navbar,
+    .mobile-bottom-nav,
     .whatsapp-button,
     .back-to-top,
     .footer-about form,
