@@ -552,7 +552,8 @@ h6,
 }
 
 .service-icon i,
-.service-icon img {
+.service-icon img,
+.service-icon video {
     font-size: 30px;
     color: #fff;
     width: 100px;

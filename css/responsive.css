@@ -117,7 +117,8 @@ img, video, iframe {
         width: 90px !important;
         height: 90px !important;
     }
-    .service-item .service-icon img {
+    .service-item .service-icon img,
+    .service-item .service-icon video {
         width: 65px !important;
         height: 65px !important;
     }
@@ -330,7 +331,8 @@ img, video, iframe {
         height: 80px !important;
         padding: 10px !important;
     }
-    .service-item .service-icon img {
+    .service-item .service-icon img,
+    .service-item .service-icon video {
         width: 55px !important;
         height: 55px !important;
     }
@@ -626,7 +628,8 @@ img, video, iframe {
         width: 70px !important;
         height: 70px !important;
     }
-    .service-item .service-icon img {
+    .service-item .service-icon img,
+    .service-item .service-icon video {
         width: 48px !important;
         height: 48px !important;
     }
