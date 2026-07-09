@@ -474,16 +474,137 @@ img, video, iframe {
         text-align: center;
     }
 
-    /* ---- Navbar ---- */
-    .navbar-dark .navbar-brand h1 img {
-        max-height: 50px !important;
-    }
+    /* ---- NAVBAR MOBILE MODERNE & PRO ---- */
+    
+    /* Conteneur navbar */
     .navbar-dark.px-5 {
         padding-left: 15px !important;
         padding-right: 15px !important;
     }
+
+    /* Logo plus petit */
+    .navbar-dark .navbar-brand h1 img {
+        max-height: 45px !important;
+    }
+
+    /* ---- HAMBURGER TOGGLER ---- */
+    .navbar-toggler {
+        border: 2px solid var(--primary) !important;
+        border-radius: 8px !important;
+        padding: 8px 10px !important;
+        transition: all 0.3s ease !important;
+        background: transparent !important;
+    }
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 3px rgba(22, 86, 173, 0.25) !important;
+        outline: none !important;
+    }
+    .navbar-toggler .fa-bars {
+        font-size: 20px;
+        color: var(--primary);
+        display: inline-block;
+        transition: transform 0.4s ease;
+    }
+    .navbar-toggler[aria-expanded="true"] .fa-bars {
+        transform: rotate(90deg);
+    }
+    .navbar-toggler[aria-expanded="true"] .fa-bars::before {
+        content: "\f00d";
+    }
+
+    /* ---- MENU DÉROULANT ---- */
+    .navbar-collapse {
+        background: #ffffff;
+        border-radius: 0 0 16px 16px;
+        box-shadow: 0 15px 40px rgba(9, 30, 62, 0.15);
+        max-height: 80vh;
+        overflow-y: auto;
+        transition: all 0.3s ease;
+    }
+
     .navbar-nav.ms-auto.py-0 {
-        padding-top: 10px !important;
+        padding: 8px 10px !important;
+    }
+
+    /* ---- LIENS DE NAVIGATION ---- */
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 12px 16px !important;
+        margin: 2px 0 !important;
+        color: #333 !important;
+        font-size: 15px !important;
+        font-weight: 600 !important;
+        border-radius: 10px !important;
+        transition: all 0.25s ease !important;
+        position: relative !important;
+        border-left: 3px solid transparent !important;
+    }
+
+    /* Hover */
+    .navbar-dark .navbar-nav .nav-link:hover {
+        background: #f0f4ff !important;
+        color: var(--primary) !important;
+        border-left-color: var(--primary) !important;
+        padding-left: 20px !important;
+    }
+
+    /* Lien actif */
+    .navbar-dark .navbar-nav .nav-link.active {
+        background: #e8f0fe !important;
+        color: var(--primary) !important;
+        border-left: 3px solid var(--primary) !important;
+        font-weight: 700 !important;
+    }
+
+    /* ---- SERVICES DROPDOWN ---- */
+    .nav-item.dropdown .dropdown-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-item.dropdown .dropdown-toggle::after {
+        content: "\f078";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        border: none;
+        margin-left: auto;
+        font-size: 12px;
+        transition: transform 0.3s ease;
+        color: var(--primary);
+    }
+    .nav-item.dropdown.show .dropdown-toggle::after {
+        transform: rotate(180deg);
+    }
+
+    /* Sous-menu */
+    .nav-item.dropdown .dropdown-menu {
+        background: #f8faff !important;
+        border: 1px solid #e8edf5 !important;
+        border-radius: 12px !important;
+        padding: 6px !important;
+        margin-top: 4px !important;
+        box-shadow: none !important;
+    }
+    .nav-item.dropdown .dropdown-item {
+        padding: 10px 16px !important;
+        font-size: 14px !important;
+        font-weight: 500 !important;
+        color: #444 !important;
+        border-radius: 8px !important;
+        transition: all 0.2s ease !important;
+        border-left: 3px solid transparent !important;
+    }
+    .nav-item.dropdown .dropdown-item:hover {
+        background: #eef4ff !important;
+        color: var(--primary) !important;
+        border-left-color: var(--primary) !important;
+        padding-left: 22px !important;
+    }
+
+    /* Supprimer l'ancien style dropdown mobile qui pouvait poser conflit */
+    .dropdown-submenu > .dropdown-menu {
+        position: static !important;
+        left: auto !important;
+        top: auto !important;
     }
 
     /* ---- Page headers (inner pages) ---- */
@@ -569,23 +690,7 @@ img, video, iframe {
         height: 4px;
     }
 
-    /* ---- Dropdown on mobile ---- */
-    .dropdown-submenu > .dropdown-menu {
-        position: static !important;
-        top: auto;
-        left: auto;
-        display: none;
-    }
-    .dropdown-submenu:hover > .dropdown-menu {
-        display: block;
-        left: 0 !important;
-        top: auto;
-    }
-
-    .dropdown-menu {
-        border: none;
-        background: #f8f9fa;
-    }
+    /* Supprimer l'ancien style - maintenant géré plus haut */
 }
 
 /* ============================================================
@@ -657,6 +762,136 @@ img, video, iframe {
     }
     .hero-content h2#title {
         font-size: 30px !important;
+    }
+}
+
+/* ============================================================
+   MOBILE BOTTOM NAV — Comme une app
+   ============================================================ */
+
+/* Cacher la bottom nav sur desktop+ */
+.mobile-bottom-nav {
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+    /* Ajouter du padding en bas du body pour que le contenu ne soit pas caché */
+    body {
+        padding-bottom: 70px;
+    }
+
+    .mobile-bottom-nav {
+        display: flex !important;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        background: #ffffff;
+        border-top: 1px solid #e8ecf1;
+        box-shadow: 0 -4px 20px rgba(9, 30, 62, 0.1);
+        padding: 6px 0;
+        padding-bottom: max(6px, env(safe-area-inset-bottom));
+        justify-content: space-around;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .bottom-nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 4px 8px;
+        min-width: 50px;
+        transition: all 0.2s ease;
+        position: relative;
+    }
+
+    .bottom-nav-item i {
+        font-size: 20px;
+        color: #8e9aaf;
+        transition: all 0.25s ease;
+        margin-bottom: 3px;
+    }
+
+    .bottom-nav-item span {
+        font-size: 10px;
+        font-weight: 500;
+        color: #8e9aaf;
+        font-family: 'Nunito', sans-serif;
+        transition: all 0.25s ease;
+        letter-spacing: 0.3px;
+    }
+
+    /* Hover */
+    .bottom-nav-item:hover i,
+    .bottom-nav-item:hover span {
+        color: var(--primary);
+    }
+
+    /* État actif */
+    .bottom-nav-item.active i {
+        color: var(--primary);
+        transform: translateY(-2px) scale(1.1);
+    }
+
+    .bottom-nav-item.active span {
+        color: var(--primary);
+        font-weight: 700;
+    }
+
+    .bottom-nav-item.active::before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 24px;
+        height: 3px;
+        background: var(--primary);
+        border-radius: 0 0 3px 3px;
+    }
+
+    /* L'icône du milieu (Services) mise en valeur */
+    .bottom-nav-item:nth-child(3) i {
+        font-size: 22px;
+    }
+
+    /* Animations au clic */
+    .bottom-nav-item:active i {
+        transform: scale(0.85);
+    }
+
+    .bottom-nav-item:active span {
+        transform: scale(0.95);
+    }
+
+    /* Corriger le whatsapp pour pas qu'il cache la bottom nav */
+    .whatsapp-button {
+        bottom: 80px !important;
+    }
+
+    /* Corriger back-to-top */
+    .back-to-top {
+        bottom: 80px !important;
+    }
+}
+
+@media (max-width: 399.98px) {
+    .bottom-nav-item i {
+        font-size: 18px;
+    }
+    .bottom-nav-item span {
+        font-size: 9px;
+    }
+    .mobile-bottom-nav {
+        padding: 4px 0;
+    }
+    body {
+        padding-bottom: 62px;
     }
 }
 
