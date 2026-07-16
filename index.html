@@ -86,6 +86,13 @@
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner"></div>
     </div>
+    <script>
+        // Sécurité : masque le spinner même si jQuery/CDN échoue (sinon page blanche)
+        window.addEventListener('load', function () {
+            var s = document.getElementById('spinner');
+            if (s) setTimeout(function () { s.classList.remove('show'); }, 300);
+        });
+    </script>
     <!-- Spinner End -->
 
     <!-- WhatsApp Floating Button -->
@@ -149,12 +156,9 @@
     <!-- Navbar & Carousel End -->
 
 
-    <!-- Hero Section -->
+    <!-- Hero Section (fond 3D temps réel — Three.js) -->
     <section class="hero">
-        <video autoplay loop muted playsinline class="background-video" poster="bnr.webp">
-            <source src="0_Mars_Planet_3840x2160.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <div id="hero-3d" aria-hidden="true"></div>
         <div class="hero-content left-align">
             <img src="img/logo.webp" alt="MultiSphere Agency" class="hero-logo">
             <h2 class="slide-in" id="title" style="font-family:'Tangerine', cursive ; color:#fff ">MultiSphere Agency</h2>
@@ -207,14 +211,31 @@
             padding-left: 50px;
         }
 
-        .background-video {
+        .hero {
+            background: radial-gradient(ellipse at 30% 40%, #12224d 0%, #060b1e 70%);
+        }
+
+        #hero-3d {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
+            inset: 0;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        #hero-3d canvas {
+            display: block;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        /* Effet 3D au survol des cartes de services */
+        .service-item {
+            transform-style: preserve-3d;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            will-change: transform;
+        }
+        .service-item:hover {
+            box-shadow: 0 25px 50px rgba(13, 110, 253, 0.25) !important;
         }
 
         .hero-content {
@@ -854,6 +875,28 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js" defer></script>
+
+    <!-- Hero 3D (Three.js) -->
+    <script type="module" src="js/hero3d.js"></script>
+
+    <!-- Inclinaison 3D des cartes de services -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.matchMedia('(hover: hover)').matches) {
+                document.querySelectorAll('.service-item').forEach(function (card) {
+                    card.addEventListener('pointermove', function (e) {
+                        var r = card.getBoundingClientRect();
+                        var rx = ((e.clientY - r.top) / r.height - 0.5) * -10;
+                        var ry = ((e.clientX - r.left) / r.width - 0.5) * 10;
+                        card.style.transform = 'perspective(800px) rotateX(' + rx + 'deg) rotateY(' + ry + 'deg) translateY(-6px)';
+                    });
+                    card.addEventListener('pointerleave', function () {
+                        card.style.transform = '';
+                    });
+                });
+            }
+        });
+    </script>
 
     <!-- Google Sheets Form Submission -->
     <script>
