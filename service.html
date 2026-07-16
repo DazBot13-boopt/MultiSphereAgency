@@ -524,6 +524,16 @@
     <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
 
     <script src="js/main.js" defer></script>
+
+    <!-- Decors 3D (Three.js) -->
+    <script type="module" src="js/deco3d.js"></script>
+    <script>
+        // Securite : masque le spinner meme si jQuery/CDN echoue
+        window.addEventListener('load', function () {
+            var sp = document.getElementById('spinner');
+            if (sp) setTimeout(function () { sp.classList.remove('show'); }, 300);
+        });
+    </script>
 </body>
 
 </html>
