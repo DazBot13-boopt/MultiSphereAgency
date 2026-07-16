@@ -357,6 +357,16 @@
 
     <script src="js/main.js" defer></script>
 
+    <!-- Decors 3D (Three.js) -->
+    <script type="module" src="js/deco3d.js"></script>
+    <script>
+        // Securite : masque le spinner meme si jQuery/CDN echoue
+        window.addEventListener('load', function () {
+            var sp = document.getElementById('spinner');
+            if (sp) setTimeout(function () { sp.classList.remove('show'); }, 300);
+        });
+    </script>
+
     <!-- Google Sheets Form Submission -->
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzP00lNXjB9P2jvq72SyCOG3m61FP9-EJxK72tZedIU7XlIp38ODOZQZa6uJkzUWho/exec';

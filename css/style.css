@@ -474,9 +474,25 @@ h6,
 
 .bg-header {
     position: relative;
-    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../bnr.webp) center center no-repeat;
-    background-size: cover;
-    animation: moveBackground 10s infinite linear;
+    overflow: hidden;
+    background: radial-gradient(ellipse at 30% 40%, #12224d 0%, #091e3e 70%);
+}
+
+.bg-header > * {
+    position: relative;
+    z-index: 1;
+}
+
+.header-3d {
+    position: absolute;
+    inset: 0;
+    z-index: 0 !important;
+}
+
+.header-3d canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 @keyframes moveBackground {
