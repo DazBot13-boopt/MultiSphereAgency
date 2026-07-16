@@ -3,55 +3,32 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MultiSphere Agency - L'union des expertises, la force de vos projets.</title>
+    <title>MultiSphere Agency — L'union des expertises, la force de vos projets</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="description" content="MultiSphere Agency : événementiel, communication digitale, développement web/mobile, cybersécurité, gestion administrative. L'union des expertises, la force de vos projets.">
+    <meta name="description" content="MultiSphere Agency : agence pluridisciplinaire au Bénin. Événementiel, communication digitale, développement web & mobile, cybersécurité et gestion administrative — un seul interlocuteur pour vos projets.">
+    <meta name="theme-color" content="#070a14">
     <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon">
     <link rel="icon" href="img/logo.webp" type="image/webp" sizes="any">
     <link rel="apple-touch-icon" href="img/logo.webp">
 
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="dns-prefetch" href="//code.jquery.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-    
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://multisphereservices.com/index.html">
-    
-    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="MultiSphere Agency">
-    <meta property="og:title" content="MultiSphere Agency - L'union des expertises, la force de vos projets.">
-    <meta property="og:description" content="MultiSphere Agency : événementiel, communication digitale, développement web/mobile, cybersécurité, gestion administrative. L'union des expertises, la force de vos projets.">
+    <meta property="og:title" content="MultiSphere Agency — L'union des expertises, la force de vos projets">
+    <meta property="og:description" content="Agence pluridisciplinaire : événementiel, communication digitale, développement web/mobile, cybersécurité, gestion administrative.">
     <meta property="og:url" content="https://multisphereservices.com/index.html">
     <meta property="og:image" content="https://multisphereservices.com/img/logo.webp">
     <meta property="og:locale" content="fr_FR">
-    
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="MultiSphere Agency - L'union des expertises, la force de vos projets.">
-    <meta name="twitter:description" content="MultiSphere Agency : événementiel, communication digitale, développement web/mobile, cybersécurité, gestion administrative.">
+    <meta name="twitter:title" content="MultiSphere Agency — L'union des expertises, la force de vos projets">
+    <meta name="twitter:description" content="Agence pluridisciplinaire au Bénin : événementiel, communication, web/mobile, cybersécurité, gestion.">
     <meta name="twitter:image" content="https://multisphereservices.com/img/logo.webp">
-    
-    <!-- JSON-LD Structured Data -->
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -60,17 +37,8 @@
         "url": "https://multisphereservices.com",
         "logo": "https://multisphereservices.com/img/logo.webp",
         "description": "Agence pluridisciplinaire : événementiel, communication digitale, développement web/mobile, cybersécurité, gestion administrative.",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+229-01-63-91-88-96",
-            "contactType": "customer service",
-            "email": "multisphere.agency@gmail.com"
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Abomey-Calavi",
-            "addressCountry": "BJ"
-        },
+        "contactPoint": { "@type": "ContactPoint", "telephone": "+229-01-63-91-88-96", "contactType": "customer service", "email": "multisphere.agency@gmail.com" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Abomey-Calavi", "addressCountry": "BJ" },
         "sameAs": [
             "https://www.facebook.com/people/Multisphere-Agency/61592002491375/",
             "https://www.instagram.com/multisphere.agency",
@@ -82,833 +50,274 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner"></div>
-    </div>
-    <script>
-        // Sécurité : masque le spinner même si jQuery/CDN échoue (sinon page blanche)
-        window.addEventListener('load', function () {
-            var s = document.getElementById('spinner');
-            if (s) setTimeout(function () { s.classList.remove('show'); }, 300);
-        });
-    </script>
-    <!-- Spinner End -->
+    <!-- Loader -->
+    <div id="loader"><div class="loader-orb"></div></div>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/2290163918896?text=Bonjour%20MultiSphere%20Agency%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20services." target="_blank" class="whatsapp-button">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-    </a>
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Abomey-Calavi, Bénin</small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+229 01 63 91 88 96</small>
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>multisphere.agency@gmail.com</small>
-                </div>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="wrap nav">
+            <a href="index.html" class="brand">
+                <img src="img/logo.webp" alt="Logo MultiSphere Agency">
+                <span>MultiSphere<b>.</b></span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="service.html">Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-cta">
+                <a href="contact.html" class="btn btn-primary">Demander un devis</a>
+                <button class="nav-toggle" aria-label="Menu"><span></span></button>
             </div>
-            <div class="col-lg-4 text-center text-lg-end">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.tiktok.com/@multisphere.agenc" target="_blank"><i class="fab fa-tiktok fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/people/Multisphere-Agency/61592002491375/" target="_blank"><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/in/multisphere-agency-a62980420/" target="_blank"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/multisphere.agency" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="https://wa.me/2290163918896?text=Bonjour%20MultiSphere%20Agency%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20services." target="_blank"><i class="fab fa-whatsapp fw-normal"></i></a>
+        </div>
+    </header>
+    <div class="mobile-menu">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="service.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary">Demander un devis</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div id="scene"></div>
+        <div class="wrap">
+            <div class="hero-inner">
+                <span class="kicker reveal">Agence pluridisciplinaire · Bénin</span>
+                <h1 class="reveal" data-d="1">L'union des expertises,<br><span class="grad-text">la force de vos projets.</span></h1>
+                <p class="lead reveal" data-d="2">De l'événementiel à la cybersécurité, en passant par la communication digitale, le développement web/mobile et la gestion administrative — nous rassemblons tous les métiers de votre projet sous un même toit.</p>
+                <div class="hero-actions reveal" data-d="3">
+                    <a href="service.html" class="btn btn-primary btn-lg">Découvrir nos services
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                    <a href="contact.html" class="btn btn-ghost btn-lg">Nous contacter</a>
+                </div>
+                <div class="hero-meta reveal" data-d="4">
+                    <div><strong><span data-count="5">0</span></strong><span>Pôles d'expertise</span></div>
+                    <div><strong><span data-count="100" data-suffix="+">0</span></strong><span>Projets réalisés</span></div>
+                    <div><strong><span data-count="90" data-suffix="+">0</span></strong><span>Clients satisfaits</span></div>
+                    <div><strong>360°</strong><span>Accompagnement</span></div>
                 </div>
             </div>
         </div>
+        <div class="scroll-cue"><i></i><span>Explorer</span></div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Événementiel</span><span>Communication</span><span>Marketing Digital</span><span>Développement Web</span><span>Applications Mobiles</span><span>Cybersécurité</span><span>Gestion Administrative</span>
+            <span>Événementiel</span><span>Communication</span><span>Marketing Digital</span><span>Développement Web</span><span>Applications Mobiles</span><span>Cybersécurité</span><span>Gestion Administrative</span>
+        </div>
     </div>
-    <!-- Topbar End -->
 
-
-    <!-- Navbar & Carousel Start -->
-    <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand p-0">
-                <h1 class="m-0"><img src="img/logo.webp" alt="MultiSphere Agency Logo" class="img-fluid" style="max-height: 80px; border-radius: 8px;" width="80" height="80"></h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Accueil</a>
-                    <a href="about.html" class="nav-item nav-link">À propos</a>
-                    <div class="nav-item dropdown">
-                        <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="service.html#evenementiel" class="dropdown-item">Événementiel</a>
-                            <a href="service.html#communication" class="dropdown-item">Communication & Marketing Digital</a>
-                            <a href="service.html#web" class="dropdown-item">Développement Web & Mobile</a>
-                            <a href="service.html#cybersecurite" class="dropdown-item">Cybersécurité</a>
-                            <a href="service.html#gestion" class="dropdown-item">Gestion Administrative & Financière</a>
-                        </div>
-                    </div>
-                    <a href="blog.html" class="nav-item nav-link">Blog</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div>
+    <!-- Services -->
+    <section class="section" id="services">
+        <div class="wrap">
+            <div class="section-head left reveal">
+                <span class="kicker">Nos expertises</span>
+                <h2 class="h-lg" style="margin-top:18px">Cinq pôles, un seul interlocuteur.</h2>
+                <p class="lead">Une coordination fluide entre les métiers, pour des projets exécutés avec cohérence — de la stratégie jusqu'à la livraison.</p>
             </div>
-        </nav>
-    </div>
-    <!-- Navbar & Carousel End -->
-
-
-    <!-- Hero Section (fond 3D temps réel — Three.js) -->
-    <section class="hero">
-        <div id="hero-3d" aria-hidden="true"></div>
-        <div class="hero-content left-align">
-            <img src="img/logo.webp" alt="MultiSphere Agency" class="hero-logo">
-            <h2 class="slide-in" id="title" style="font-family:'Tangerine', cursive ; color:#fff ">MultiSphere Agency</h2>
-            <p class="slide-in word-by-word" id="description">L'union des expertises, la force de vos projets. De l'événementiel à la cybersécurité, en passant par la communication digitale, le développement web/mobile et la gestion administrative — nous rassemblons tous les métiers dont votre projet a besoin, sous un même toit.</p>
-            <button class="cta slide-in"><a href="service.html">Découvrir nos services</a></button>
+            <div class="services">
+                <a href="service.html#evenementiel" class="service reveal">
+                    <span class="num">01</span>
+                    <h3><svg class="s-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Événementiel</h3>
+                    <p class="s-desc">Conception, organisation et pilotage d'événements d'entreprise sur mesure.</p>
+                    <span class="s-open"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+                </a>
+                <a href="service.html#communication" class="service reveal">
+                    <span class="num">02</span>
+                    <h3><svg class="s-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-5v12L3 14v-3zM3 11v3M11.6 16.8a3 3 0 0 1-5.8-1.6"/></svg>Communication & Marketing</h3>
+                    <p class="s-desc">Faire rayonner votre marque, en ligne et hors ligne.</p>
+                    <span class="s-open"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+                </a>
+                <a href="service.html#web" class="service reveal">
+                    <span class="num">03</span>
+                    <h3><svg class="s-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13 6l-2 12"/></svg>Développement Web & Mobile</h3>
+                    <p class="s-desc">Des solutions numériques modernes, performantes et sur mesure.</p>
+                    <span class="s-open"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+                </a>
+                <a href="service.html#cybersecurite" class="service reveal">
+                    <span class="num">04</span>
+                    <h3><svg class="s-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3zM9.5 12l1.8 1.8 3.2-3.6"/></svg>Cybersécurité</h3>
+                    <p class="s-desc">Protéger vos données, vos plateformes et vos événements numériques.</p>
+                    <span class="s-open"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+                </a>
+                <a href="service.html#gestion" class="service reveal">
+                    <span class="num">05</span>
+                    <h3><svg class="s-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h6M9 17h6"/></svg>Gestion Administrative & Financière</h3>
+                    <p class="s-desc">Piloter vos projets et vos événements avec rigueur.</p>
+                    <span class="s-open"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+                </a>
+            </div>
         </div>
     </section>
 
-    <script>
-        window.addEventListener("load", function() {
-            document.querySelector("#title").classList.add("show");
+    <!-- About -->
+    <section class="section" style="padding-top:0">
+        <div class="wrap split">
+            <div class="reveal">
+                <span class="kicker">À propos</span>
+                <h2 class="h-lg" style="margin:18px 0 20px">Une agence 360°, pensée pour la réussite de vos projets.</h2>
+                <p class="lead">MultiSphere Agency rassemble sous un même toit tous les métiers indispensables à vos projets. Notre force : un interlocuteur unique et une coordination fluide entre les expertises, pour des livrables cohérents, rigoureux et créatifs.</p>
+                <ul class="check-list">
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Approche 360°</li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Équipe experte</li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Support réactif</li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Tarifs justes</li>
+                </ul>
+                <a href="about.html" class="btn btn-ghost">En savoir plus sur nous</a>
+            </div>
+            <div class="about-visual reveal" data-d="1"><div id="about-3d"></div></div>
+        </div>
+    </section>
 
-            const textElement = document.querySelector("#description");
-            const words = textElement.innerText.split(" ");
-            textElement.innerHTML = "";
-            words.forEach((word, index) => {
-                let span = document.createElement("span");
-                span.innerText = word;
-                textElement.appendChild(span);
-                setTimeout(() => span.classList.add("show"), index * 200);
-            });
-        });
-    </script>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Tangerine:wght@400;700&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        html, body {
-            overflow-x: hidden;
-        }
-
-        .hero {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            color: white;
-            text-align: left;
-            padding-left: 50px;
-        }
-
-        .hero {
-            background: radial-gradient(ellipse at 30% 40%, #12224d 0%, #060b1e 70%);
-        }
-
-        #hero-3d {
-            position: absolute;
-            inset: 0;
-            z-index: 0;
-            overflow: hidden;
-        }
-
-        #hero-3d canvas {
-            display: block;
-            width: 100% !important;
-            height: 100% !important;
-        }
-
-        /* Effet 3D au survol des cartes de services */
-        .service-item {
-            transform-style: preserve-3d;
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
-            will-change: transform;
-        }
-        .service-item:hover {
-            box-shadow: 0 25px 50px rgba(13, 110, 253, 0.25) !important;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            margin-top: 130px;
-            max-width: 600px;
-        }
-
-        /* Hero logo animation */
-        .hero-logo {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-            animation: heroLogoSpin 8s linear infinite;
-            box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
-        }
-
-        @keyframes heroLogoSpin {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        h2 {
-            font-size: 60px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            font-family: 'Tangerine', cursive;
-            opacity: 0;
-            transform: translateX(-100px);
-            transition: opacity 1s ease-out, transform 1s ease-out;
-        }
-
-        h2.show {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .cta {
-            margin-top: 30px;
-            padding: 10px 20px;
-            background: white;
-            color: black;
-            border: none;
-            cursor: pointer;
-            transition: background 0.3s;
-            font-size: 1.2em;
-            font-weight: 600;
-            border-radius: 5px;
-        }
-
-        .word-by-word span {
-            opacity: 0;
-            display: inline-block;
-            margin-top: 10px;
-            transform: translateX(-20px);
-            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
-            margin-right: 5px;
-        }
-
-        .word-by-word span.show {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        /* Clean, round service icons overriding the template gradient square */
-        .service-item {
-            padding: 30px 25px !important;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        .service-item .service-icon {
-            background: linear-gradient(135deg, #eef4ff, #ffffff) !important;
-            border: 2px solid #e6ecff !important;
-            border-radius: 50% !important;
-            padding: 15px !important;
-            width: 110px !important;
-            height: 110px !important;
-            display: flex !important;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px !important;
-            box-shadow: 0 6px 15px rgba(13, 110, 253, 0.12) !important;
-            overflow: hidden;
-        }
-        .service-item .service-icon img,
-        .service-item .service-icon video {
-            width: 80px !important;
-            height: 80px !important;
-            object-fit: contain !important;
-            border-radius: 50%;
-            background: transparent;
-        }
-        .service-item h4 { color: #091e3e !important; font-weight: 700 !important; }
-        /* Service card details list */
-        .service-item ul.service-details {
-            list-style: none;
-            padding: 0;
-            text-align: left;
-            margin-top: 15px;
-            width: 100%;
-        }
-        .service-item ul.service-details li {
-            padding: 8px 0 8px 26px;
-            position: relative;
-            font-size: 14px;
-            line-height: 1.5;
-            color: #555;
-            border-bottom: 1px solid #eef2f7;
-        }
-        .service-item ul.service-details li:last-child { border-bottom: none; }
-        .service-item ul.service-details li::before {
-            content: "\f00c";
-            font-family: "Font Awesome 6 Free";
-            font-weight: 900;
-            color: var(--bs-primary, #0d6efd);
-            position: absolute;
-            left: 0;
-            top: 8px;
-            font-size: 13px;
-        }
-        /* Force equal-height alignment in services grid */
-        .services-grid > [class*="col-"] {
-            display: flex;
-        }
-        .services-grid .service-item,
-        .services-grid .bg-primary {
-            width: 100%;
-            height: 100%;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .hero {
-                justify-content: center;
-                text-align: center;
-                padding: 30px;
-            }
-            .hero-content { max-width: 90%; }
-            .hero-logo { width: 80px; height: 80px; }
-            h2 { font-size: 50px; }
-            p { font-size: 16px; }
-            .cta { font-size: 1em; }
-        }
-
-        @media (max-width: 768px) {
-            .hero-logo { width: 70px; height: 70px; }
-            h2 { font-size: 40px; }
-            p { font-size: 14px; }
-            .cta { font-size: 0.9em; padding: 10px 20px; }
-        }
-
-        @media (max-width: 480px) {
-            .hero { padding: 20px; }
-            .hero-logo { width: 60px; height: 60px; }
-            h2 { font-size: 32px; }
-            p { font-size: 13px; }
-            .cta { font-size: 0.8em; padding: 8px 16px; }
-        }
-    </style>
-
-
-    <!-- Facts Start -->
-    <div class="container-fluid facts py-5 pt-lg-0">
-        <div class="container py-5 pt-lg-0">
-            <div class="row gx-0">
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
-                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
-                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-users text-primary"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white mb-0">Clients satisfaits</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">90</h1>
-                        </div>
-                    </div>
+    <!-- Why us -->
+    <section class="section" style="padding-top:0">
+        <div class="wrap">
+            <div class="section-head reveal center">
+                <span class="kicker">Pourquoi nous choisir</span>
+                <h2 class="h-lg" style="margin-top:18px">Nous accompagnons votre croissance à 360°.</h2>
+            </div>
+            <div class="grid g-4">
+                <div class="card feature reveal">
+                    <div class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2zM12 2v9M12 11l8-4.5M12 11l-8-4.5"/></svg></div>
+                    <h3>Multi-expertises</h3>
+                    <p>5 pôles complémentaires, un seul interlocuteur pour piloter l'ensemble de votre projet.</p>
                 </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
-                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-check text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-primary mb-0">Projets réalisés</h5>
-                            <h1 class="mb-0" data-toggle="counter-up">100</h1>
-                        </div>
-                    </div>
+                <div class="card feature reveal" data-d="1">
+                    <div class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 15a5 5 0 100-10 5 5 0 000 10zM8.5 13.5L7 22l5-3 5 3-1.5-8.5"/></svg></div>
+                    <h3>Qualité reconnue</h3>
+                    <p>Une exigence de résultat, une créativité affirmée et une rigueur de livraison à chaque étape.</p>
                 </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
-                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-award text-primary"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white mb-0">Expertises</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">5</h1>
-                        </div>
-                    </div>
+                <div class="card feature reveal" data-d="2">
+                    <div class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 20a5 5 0 00-10 0M12 12a4 4 0 100-8 4 4 0 000 8zM19 8a3 3 0 010 5M5 8a3 3 0 000 5"/></svg></div>
+                    <h3>Équipe professionnelle</h3>
+                    <p>Des experts passionnés dans chaque domaine, mobilisés autour de vos objectifs.</p>
+                </div>
+                <div class="card feature reveal" data-d="3">
+                    <div class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 7v5l3 2M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+                    <h3>Support réactif</h3>
+                    <p>Disponibles et à l'écoute, avant, pendant et après le projet.</p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Facts End -->
+    </section>
 
+    <!-- Process -->
+    <section class="section" style="padding-top:0">
+        <div class="wrap">
+            <div class="section-head left reveal">
+                <span class="kicker">Notre méthode</span>
+                <h2 class="h-lg" style="margin-top:18px">De l'idée à la livraison, un cap clair.</h2>
+            </div>
+            <div class="steps">
+                <div class="step reveal"><h3>Écoute & cadrage</h3><p>Nous analysons votre besoin, vos objectifs et votre budget pour définir la bonne trajectoire.</p></div>
+                <div class="step reveal" data-d="1"><h3>Stratégie</h3><p>Nous concevons un plan d'action clair, avec jalons, livrables et indicateurs de réussite.</p></div>
+                <div class="step reveal" data-d="2"><h3>Exécution</h3><p>Nos experts déploient le projet en coordination, avec un suivi et un reporting transparents.</p></div>
+                <div class="step reveal" data-d="3"><h3>Livraison & suivi</h3><p>Nous livrons, mesurons les résultats et restons disponibles pour faire évoluer la solution.</p></div>
+            </div>
+        </div>
+    </section>
 
-    <!-- About Start -->
-    <div class="container-fluid py-5 wow fadeInUp spincheck" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-7">
-                    <div class="section-title position-relative pb-3 mb-5">
-                        <h5 class="fw-bold text-primary text-uppercase">À propos</h5>
-                        <h1 class="mb-0">MultiSphere Agency — L'union des expertises, la force de vos projets.</h1>
-                    </div>
-                    <p class="mb-4">MultiSphere Agency est une agence pluridisciplinaire qui rassemble sous un même toit tous les métiers indispensables à la réussite de vos projets : événementiel, communication et marketing digital, développement web et mobile, cybersécurité, et gestion administrative & financière.</p>
-                    <p class="mb-4">Notre force ? Vous offrir un interlocuteur unique et une coordination fluide entre les expertises, pour des projets exécutés avec cohérence, rigueur et créativité — de la stratégie jusqu'à la livraison.</p>
-                    <div class="row g-0 mb-3">
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Approche 360°</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Équipe experte</h5>
-                        </div>
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Support réactif</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Tarifs justes</h5>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="mb-2">Appelez-nous pour toute question</h5>
-                            <h4 class="text-primary mb-0">+229 01 63 91 88 96</h4>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Demander un devis</a>
+    <!-- Testimonials -->
+    <section class="section" style="padding-top:0">
+        <div class="wrap">
+            <div class="section-head reveal center">
+                <span class="kicker">Avis clients</span>
+                <h2 class="h-lg" style="margin-top:18px">Ce que disent nos clients.</h2>
+            </div>
+            <div class="tst grid g-3">
+                <div class="card tst-card reveal">
+                    <div class="stars">★★★★★</div>
+                    <p class="tst-quote">MultiSphere Agency a transformé notre communication digitale. Leur approche 360° nous a permis de gagner en visibilité et en efficacité.</p>
+                    <div class="tst-who"><img src="img/testimonial-1.jpg" alt="Amara Diallo"><div><b>Amara Diallo</b><span>Entrepreneur, Sénégal</span></div></div>
                 </div>
-                <div class="col-lg-5" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="home.gif" style="object-fit:contain;" loading="lazy" alt="MultiSphere Agency - Équipe">
-                    </div>
+                <div class="card tst-card reveal" data-d="1">
+                    <div class="stars">★★★★★</div>
+                    <p class="tst-quote">Grâce à leur accompagnement en développement web et cybersécurité, nous avons lancé notre plateforme e-commerce en toute sérénité.</p>
+                    <div class="tst-who"><img src="img/testimonial-2.jpg" alt="Kwame Asante"><div><b>Kwame Asante</b><span>Directeur Marketing, Ghana</span></div></div>
+                </div>
+                <div class="card tst-card reveal" data-d="2">
+                    <div class="stars">★★★★★</div>
+                    <p class="tst-quote">L'organisation de notre conférence annuelle a été un véritable succès. Professionnalisme, créativité et rigueur au rendez-vous.</p>
+                    <div class="tst-who"><img src="img/testimonial-3.jpg" alt="Fatoumata Traoré"><div><b>Fatoumata Traoré</b><span>Responsable Événementiel, Mali</span></div></div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- About End -->
+    </section>
 
-
-    <!-- Features Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Pourquoi nous choisir</h5>
-                <h1 class="mb-0">Nous accompagnons votre croissance à 360°</h1>
-            </div>
-            <div class="row g-5">
-                <!-- Left Column -->
-                <div class="col-lg-4">
-                    <div class="row g-4">
-                        <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
-                            <div class="feature-card">
-                                <div class="icon-box mb-3">
-                                    <i class="fa fa-cubes"></i>
-                                </div>
-                                <h4>Multi-expertises</h4>
-                                <p class="mb-0">5 pôles d'expertise complémentaires, un seul interlocuteur pour piloter l'ensemble de votre projet.</p>
-                            </div>
-                        </div>
-                        <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
-                            <div class="feature-card">
-                                <div class="icon-box mb-3">
-                                    <i class="fa fa-award"></i>
-                                </div>
-                                <h4>Qualité reconnue</h4>
-                                <p class="mb-0">Une exigence de résultat, une créativité affirmée et une rigueur de livraison à chaque étape.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Center 3D -->
-                <div class="col-lg-4 wow zoomIn why-img" data-wow-delay="0.9s" style="min-height: 350px;">
-                    <div id="why-3d" class="position-relative h-100 w-100" aria-hidden="true"></div>
-                </div>
-
-                <!-- Right Column -->
-                <div class="col-lg-4">
-                    <div class="row g-4">
-                        <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
-                            <div class="feature-card">
-                                <div class="icon-box mb-3">
-                                    <i class="fa fa-users-cog"></i>
-                                </div>
-                                <h4>Équipe professionnelle</h4>
-                                <p class="mb-0">Des experts passionnés dans chaque domaine, mobilisés autour de vos objectifs.</p>
-                            </div>
-                        </div>
-                        <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
-                            <div class="feature-card">
-                                <div class="icon-box mb-3">
-                                    <i class="fa fa-phone-alt"></i>
-                                </div>
-                                <h4>Support réactif</h4>
-                                <p class="mb-0">Nous restons disponibles et à l'écoute, pour vous accompagner avant, pendant et après le projet.</p>
-                            </div>
-                        </div>
-                    </div>
+    <!-- CTA -->
+    <section class="section" style="padding-top:0">
+        <div class="wrap">
+            <div class="cta-band reveal">
+                <span class="kicker">Un projet en tête ?</span>
+                <h2 class="h-lg" style="margin:18px 0 12px">Parlons-en. Nous vous préparons un devis sur mesure.</h2>
+                <p class="lead" style="margin-inline:auto">Un seul interlocuteur, toutes les expertises. Réponse sous 24 h ouvrées.</p>
+                <div class="btns">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Demander un devis</a>
+                    <a href="tel:+2290163918896" class="btn btn-ghost btn-lg">+229 01 63 91 88 96</a>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Features End -->
+    </section>
 
-
-    <img src="img/one1111.webp" class="rain" alt="" loading="lazy" width="1200" height="100"/>
-    <img src="img/two222.webp" class="rain" alt="" loading="lazy" width="1200" height="100"/>
-
-    <!-- Service Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 700px;">
-                <h5 class="fw-bold text-primary text-uppercase">Nos services</h5>
-                <h1 class="mb-0">Cinq expertises au service de votre réussite</h1>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand"><img src="img/logo.webp" alt="Logo MultiSphere Agency"><span>MultiSphere<b>.</b></span></a>
+                    <p>« L'union des expertises, la force de vos projets. » Toutes les expertises dont votre projet a besoin, sous un même toit.</p>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/people/Multisphere-Agency/61592002491375/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h2.5l.5-3H14V9z"/></svg></a>
+                        <a href="https://www.instagram.com/multisphere.agency" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                        <a href="https://www.linkedin.com/in/multisphere-agency-a62980420/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.5 8A1.5 1.5 0 106.5 5a1.5 1.5 0 000 3zM5 10h3v9H5zM10 10h3v1.3c.5-.8 1.5-1.5 3-1.5 2.2 0 3 1.4 3 3.8V19h-3v-5c0-1.2-.4-1.9-1.4-1.9-1 0-1.6.7-1.6 1.9v5h-3z"/></svg></a>
+                        <a href="https://www.tiktok.com/@multisphere.agenc" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.3 2 1.6 3.5 3.5 3.8V10c-1.4 0-2.7-.4-3.5-1v6.2A5.2 5.2 0 118.8 10v3.2A2 2 0 1012 15V3h4z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Accueil</a>
+                    <a href="about.html">À propos</a>
+                    <a href="service.html">Services</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Expertises</h4>
+                    <a href="service.html#evenementiel">Événementiel</a>
+                    <a href="service.html#communication">Communication digitale</a>
+                    <a href="service.html#web">Web & Mobile</a>
+                    <a href="service.html#cybersecurite">Cybersécurité</a>
+                    <a href="service.html#gestion">Gestion administrative</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <a href="https://maps.google.com/?q=Abomey-Calavi,Bénin" target="_blank" rel="noopener">Abomey-Calavi, Bénin</a>
+                    <a href="mailto:multisphere.agency@gmail.com">multisphere.agency@gmail.com</a>
+                    <a href="tel:+2290163918896">+229 01 63 91 88 96</a>
+                </div>
             </div>
-            <div class="row g-5 services-grid">
-
-                <!-- Service 1 : Événementiel -->
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s" id="evenementiel">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center text-center p-4">
-                        <div class="service-icon">
-                            <video autoplay loop muted playsinline width="80" height="80" style="border-radius: 50%; object-fit: contain; background: transparent;"><source src="mss-9.mp4" type="video/mp4"></video>
-                        </div>
-                        <h4 class="mb-3">Événementiel</h4>
-                        <p class="m-0">Conception, organisation et pilotage d'événements d'entreprise sur mesure.</p>
-                        <ul class="service-details">
-                            <li>Conception et organisation complète (lancements de produit, conférences, séminaires, cérémonies)</li>
-                            <li>Planification, pilotage et suivi de projets (planning, budget, jalons, reporting)</li>
-                            <li>Coordination des prestataires et des équipes le jour J</li>
-                            <li>Gestion des invitations, inscriptions et accueil des participants</li>
-                            <li>Bilan post-événement : rapport, indicateurs et recommandations</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Service 2 : Communication & Marketing Digital -->
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.5s" id="communication">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center text-center p-4">
-                        <div class="service-icon">
-                            <video autoplay loop muted playsinline width="80" height="80" style="border-radius: 50%; object-fit: contain; background: transparent;"><source src="mss-2.mp4" type="video/mp4"></video>
-                        </div>
-                        <h4 class="mb-3">Communication & Marketing Digital</h4>
-                        <p class="m-0">Faire rayonner votre marque, en ligne et hors ligne.</p>
-                        <ul class="service-details">
-                            <li>Stratégie de communication digitale et plan de contenu</li>
-                            <li>Création et gestion des réseaux sociaux (community management)</li>
-                            <li>Identité visuelle & branding : logo, charte graphique, supports print et digitaux</li>
-                            <li>Création de contenus : visuels, affiches, vidéos, newsletters</li>
-                            <li>Campagnes publicitaires en ligne (sponsoring, ciblage, suivi des résultats)</li>
-                            <li>Couverture digitale d'événements (live, photos, aftermovie)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Service 3 : Développement Web & Mobile -->
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.7s" id="web">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center text-center p-4">
-                        <div class="service-icon">
-                            <video autoplay loop muted playsinline width="80" height="80" style="border-radius: 50%; object-fit: contain; background: transparent;"><source src="mss-5.mp4" type="video/mp4"></video>
-                        </div>
-                        <h4 class="mb-3">Développement Web & Mobile</h4>
-                        <p class="m-0">Des solutions numériques modernes, performantes et sur mesure.</p>
-                        <ul class="service-details">
-                            <li>Sites vitrines et sites e-commerce modernes et responsives</li>
-                            <li>Applications web et mobiles sur mesure</li>
-                            <li>Plateformes événementielles : billetterie, inscription en ligne, badges QR</li>
-                            <li>Outils de gestion interne (facturation, suivi client, tableaux de bord)</li>
-                            <li>Maintenance, hébergement et évolution des solutions livrées</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Service 4 : Cybersécurité -->
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s" id="cybersecurite">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center text-center p-4">
-                        <div class="service-icon">
-                            <video autoplay loop muted playsinline width="80" height="80" style="border-radius: 50%; object-fit: contain; background: transparent;"><source src="mss-10.mp4" type="video/mp4"></video>
-                        </div>
-                        <h4 class="mb-3">Cybersécurité</h4>
-                        <p class="m-0">Protéger vos données, vos plateformes et vos événements numériques.</p>
-                        <ul class="service-details">
-                            <li>Audit de sécurité des sites, applications et systèmes</li>
-                            <li>Sécurisation des plateformes développées par l'agence (bonnes pratiques, chiffrement, sauvegardes)</li>
-                            <li>Protection des données clients et conformité</li>
-                            <li>Sensibilisation et formation des équipes aux risques numériques</li>
-                            <li>Sécurisation des événements digitaux (visioconférences, plateformes d'inscription)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Service 5 : Gestion Administrative & Financière -->
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.5s" id="gestion">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center text-center p-4">
-                        <div class="service-icon">
-                            <video autoplay loop muted playsinline width="80" height="80" style="border-radius: 50%; object-fit: contain; background: transparent;"><source src="mss-13.mp4" type="video/mp4"></video>
-                        </div>
-                        <h4 class="mb-3">Gestion Administrative & Financière</h4>
-                        <p class="m-0">Piloter vos projets avec rigueur, du devis au reporting.</p>
-                        <ul class="service-details">
-                            <li>Élaboration de devis et facturation professionnelle</li>
-                            <li>Suivi budgétaire des projets et des événements</li>
-                            <li>Gestion des contrats clients et prestataires</li>
-                            <li>Reporting financier par projet</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Call-to-quote card -->
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.7s">
-                    <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
-                        <h3 class="text-white mb-3">Un projet en tête ?</h3>
-                        <p class="text-white mb-3">Discutons-en. Nous vous préparons un devis sur mesure.</p>
-                        <h4 class="text-white mb-3">+229 01 63 91 88 96</h4>
-                        <a href="contact.html" class="btn btn-light py-2 px-4">Nous contacter</a>
-                    </div>
-                </div>
-
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2026</span> MultiSphere Agency. Tous droits réservés.</p>
+                <p>L'union des expertises, la force de vos projets.</p>
             </div>
         </div>
-    </div>
-    <!-- Service End -->
+    </footer>
 
+    <!-- Floating actions -->
+    <a href="https://wa.me/2290163918896?text=Bonjour%20MultiSphere%20Agency%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20services." target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.1.2.6 1 1.3 1.6.9.8 1.6 1 1.9 1.2.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.6-.1l1.8.9c.3.1.4.2.5.3.1.2.1.8-.1 1.4z"/></svg>
+    </a>
+    <button class="to-top" aria-label="Haut de page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 
-    <img src="img/two222.webp" class="rain" alt="" loading="lazy" width="1200" height="100"/>
-
-    <!-- Quote Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-7">
-                    <div class="section-title position-relative pb-3 mb-5">
-                        <h5 class="fw-bold text-primary text-uppercase">Demander un devis</h5>
-                        <h1 class="mb-0">Besoin d'un devis gratuit ? Contactez-nous.</h1>
-                    </div>
-                    <div class="row gx-3">
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"></i>Réponse sous 24 h</h5>
-                        </div>
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                            <h5 class="mb-4"><i class="fa fa-phone-alt text-primary me-3"></i>Accompagnement dédié</h5>
-                        </div>
-                    </div>
-                    <p class="mb-4">Nous sommes là pour vous apporter la bonne solution au juste prix. Qu'il s'agisse d'une simple question ou d'un cahier des charges détaillé, notre équipe est joignable et à l'écoute. Tarification transparente, réponse rapide, sans engagement.</p>
-                    <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="mb-2">Appelez-nous</h5>
-                            <h4 class="text-primary mb-0">+229 01 63 91 88 96</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-                        <form name="submit-to-google-sheet-2">
-                            <div class="row g-3">
-                                <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" name="Name" placeholder="Votre nom" style="height: 55px;" required>
-                                </div>
-                                <div class="col-12">
-                                    <input type="email" class="form-control bg-light border-0" name="Mail" placeholder="Votre email" style="height: 55px;" required>
-                                </div>
-                                <div class="col-12">
-                                    <select class="form-select bg-light border-0" name="Service" style="height: 55px;">
-                                        <option selected>Choisir un service</option>
-                                        <option value="1">Événementiel</option>
-                                        <option value="2">Communication & Marketing Digital</option>
-                                        <option value="3">Développement Web & Mobile</option>
-                                        <option value="4">Cybersécurité</option>
-                                        <option value="5">Gestion Administrative & Financière</option>
-                                        <option value="6">Autre</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control bg-light border-0" name="Message" rows="3" placeholder="Votre message"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-dark w-100 py-3" type="submit">Demander un devis</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Quote End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-4 col-md-6 footer-about">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
-                        <a href="index.html" class="navbar-brand">
-                            <h1 class="m-0 text-white">MultiSphere Agency</h1>
-                        </a>
-                        <p class="mt-3 mb-4"><em>« L'union des expertises, la force de vos projets. »</em><br><br>MultiSphere Agency rassemble sous un même toit toutes les expertises dont votre projet a besoin : événementiel, communication digitale, développement web & mobile, cybersécurité et gestion administrative.</p>
-                        <form action="index.html">
-                            <div class="input-group">
-                                <input type="text" class="form-control border-white p-3" placeholder="Votre email">
-                                <button class="btn btn-dark">S'inscrire</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-6">
-                    <div class="row gx-5">
-                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Nous contacter</h3>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-geo-alt text-primary me-2"></i>
-                                <p class="mb-0">Abomey-Calavi, Bénin</p>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0">multisphere.agency@gmail.com</p>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0">+229 01 63 91 88 96</p>
-                            </div>
-                            <div class="d-flex mt-4">
-                                <a class="btn btn-primary btn-square me-2" href="https://www.tiktok.com/@multisphere.agenc" target="_blank"><i class="fab fa-tiktok fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="https://www.facebook.com/people/Multisphere-Agency/61592002491375/" target="_blank"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="https://www.linkedin.com/in/multisphere-agency-a62980420/" target="_blank"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square" href="https://www.instagram.com/multisphere.agency" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Liens rapides</h3>
-                            </div>
-                            <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Accueil</a>
-                                <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>À propos</a>
-                                <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Nos services</a>
-                                <a class="text-light mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Blog</a>
-                                <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Nos expertises</h3>
-                            </div>
-                            <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="service.html#evenementiel"><i class="bi bi-arrow-right text-primary me-2"></i>Événementiel</a>
-                                <a class="text-light mb-2" href="service.html#communication"><i class="bi bi-arrow-right text-primary me-2"></i>Communication digitale</a>
-                                <a class="text-light mb-2" href="service.html#web"><i class="bi bi-arrow-right text-primary me-2"></i>Développement Web & Mobile</a>
-                                <a class="text-light mb-2" href="service.html#cybersecurite"><i class="bi bi-arrow-right text-primary me-2"></i>Cybersécurité</a>
-                                <a class="text-light" href="service.html#gestion"><i class="bi bi-arrow-right text-primary me-2"></i>Gestion administrative</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid text-white" style="background: #061429;">
-        <div class="container text-center">
-            <div class="row justify-content-end">
-                <div class="col-lg-8 col-md-6">
-                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="index.html">MultiSphere Agency</a>. Tous droits réservés.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="index.html#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- Mobile Bottom Nav -->
-    <div class="mobile-bottom-nav d-lg-none">
-        <a href="index.html" class="bottom-nav-item active">
-            <i class="fa fa-home"></i>
-            <span>Accueil</span>
-        </a>
-        <a href="about.html" class="bottom-nav-item">
-            <i class="fa fa-info-circle"></i>
-            <span>À propos</span>
-        </a>
-        <a href="service.html" class="bottom-nav-item">
-            <i class="fa fa-cogs"></i>
-            <span>Services</span>
-        </a>
-        <a href="blog.html" class="bottom-nav-item">
-            <i class="fa fa-newspaper"></i>
-            <span>Blog</span>
-        </a>
-        <a href="contact.html" class="bottom-nav-item">
-            <i class="fa fa-envelope"></i>
-            <span>Contact</span>
-        </a>
-    </div>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="lib/wow/wow.min.js" defer></script>
-    <script src="lib/easing/easing.min.js" defer></script>
-    <script src="lib/waypoints/waypoints.min.js" defer></script>
-    <script src="lib/counterup/counterup.min.js" defer></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js" defer></script>
-
-    <!-- Hero 3D (Three.js) -->
-    <script type="module" src="js/hero3d.js"></script>
-    <script type="module" src="js/deco3d.js"></script>
-
-    <!-- Inclinaison 3D des cartes de services -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            if (window.matchMedia('(hover: hover)').matches) {
-                document.querySelectorAll('.service-item').forEach(function (card) {
-                    card.addEventListener('pointermove', function (e) {
-                        var r = card.getBoundingClientRect();
-                        var rx = ((e.clientY - r.top) / r.height - 0.5) * -10;
-                        var ry = ((e.clientX - r.left) / r.width - 0.5) * 10;
-                        card.style.transform = 'perspective(800px) rotateX(' + rx + 'deg) rotateY(' + ry + 'deg) translateY(-6px)';
-                    });
-                    card.addEventListener('pointerleave', function () {
-                        card.style.transform = '';
-                    });
-                });
-            }
-        });
-    </script>
-
-    <!-- Google Sheets Form Submission -->
-    <script>
-        const scriptURL2 = 'https://script.google.com/macros/s/AKfycbzP00lNXjB9P2jvq72SyCOG3m61FP9-EJxK72tZedIU7XlIp38ODOZQZa6uJkzUWho/exec';
-        const form2 = document.forms['submit-to-google-sheet-2'];
-
-        if (form2) {
-            form2.addEventListener('submit', e => {
-                e.preventDefault();
-                fetch(scriptURL2, { method: 'POST', body: new FormData(form2) })
-                    .then(response => alert("Merci ! Votre demande de devis a bien été envoyée. Nous vous répondrons sous 24h."))
-                    .then(() => { window.location.reload(); })
-                    .catch(error => console.error('Error!', error.message));
-            });
-        }
-    </script>
+    <script src="js/app.js" defer></script>
+    <script type="module" src="js/scene.js"></script>
 </body>
 
 </html>
