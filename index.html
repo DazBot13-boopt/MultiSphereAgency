@@ -151,13 +151,9 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <video autoplay loop muted playsinline class="background-video" poster="bnr.webp">
-            <source src="0_Mars_Planet_3840x2160.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <div id="hero-globe" class="background-video" aria-hidden="true"></div>
         <div class="hero-content left-align">
-            <img src="img/logo.webp" alt="MultiSphere Agency" class="hero-logo">
-            <h2 class="slide-in" id="title" style="font-family:'Tangerine', cursive ; color:#fff ">MultiSphere Agency</h2>
+            <h2 class="slide-in" id="title">MultiSphere Agency</h2>
             <p class="slide-in word-by-word" id="description">L'union des expertises, la force de vos projets. De l'événementiel à la cybersécurité, en passant par la communication digitale, le développement web/mobile et la gestion administrative — nous rassemblons tous les métiers dont votre projet a besoin, sous un même toit.</p>
             <button class="cta slide-in"><a href="service.html">Découvrir nos services</a></button>
         </div>
@@ -205,6 +201,8 @@
             color: white;
             text-align: left;
             padding-left: 50px;
+            overflow: hidden;
+            background: radial-gradient(ellipse at 70% 40%, #12224d 0%, #060b1e 70%);
         }
 
         .background-video {
@@ -214,7 +212,22 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            z-index: -1;
+            z-index: 0;
+        }
+
+        #hero-globe canvas {
+            display: block;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background: linear-gradient(90deg, #060b1e 0%, rgba(6,11,30,0.55) 42%, transparent 72%);
         }
 
         .hero-content {
@@ -245,10 +258,11 @@
         }
 
         h2 {
-            font-size: 60px;
+            font-size: 56px;
             font-weight: 600;
-            letter-spacing: 1px;
-            font-family: 'Tangerine', cursive;
+            letter-spacing: 0.5px;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
             opacity: 0;
             transform: translateX(-100px);
             transition: opacity 1s ease-out, transform 1s ease-out;
@@ -543,8 +557,6 @@
     <!-- Features End -->
 
 
-    <img src="img/one1111.webp" class="rain" alt="" loading="lazy" width="1200" height="100"/>
-    <img src="img/two222.webp" class="rain" alt="" loading="lazy" width="1200" height="100"/>
 
     <!-- Service Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -661,7 +673,6 @@
     <!-- Service End -->
 
 
-    <img src="img/two222.webp" class="rain" alt="" loading="lazy" width="1200" height="100"/>
 
     <!-- Quote Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -854,6 +865,9 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js" defer></script>
+
+    <!-- Globe 3D du hero (Three.js) -->
+    <script type="module" src="js/heroglobe.js"></script>
 
     <!-- Google Sheets Form Submission -->
     <script>
