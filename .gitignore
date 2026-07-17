@@ -23,7 +23,6 @@ node_modules
 # misc
 .DS_Store
 *.pem
-*.png
 *.zip
 Caddyfile
 mini-services/
