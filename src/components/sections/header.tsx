@@ -67,21 +67,23 @@ export function Header() {
             />
           </Link>
 
-          {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1">
+          {/* Desktop nav — grouped in a floating glass pill */}
+          <nav className="hidden lg:flex items-center gap-0.5 rounded-full border border-border/50 bg-background/60 p-1 shadow-sm backdrop-blur-md">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`relative whitespace-nowrap px-2.5 xl:px-3.5 py-2 text-sm font-medium rounded-lg transition-colors hover:text-primary ${
-                  active === link.href ? 'text-primary' : 'text-foreground/70'
+                className={`relative whitespace-nowrap rounded-full px-2 py-1.5 text-[13px] font-medium transition-colors xl:px-3 xl:text-sm ${
+                  active === link.href
+                    ? 'text-primary-foreground'
+                    : 'text-foreground/70 hover:text-primary'
                 }`}
               >
-                {link.label}
+                <span className="relative z-10">{link.label}</span>
                 {active === link.href && (
                   <motion.span
                     layoutId="nav-active"
-                    className="absolute inset-0 -z-10 rounded-lg bg-primary/10"
+                    className="absolute inset-0 rounded-full bg-primary shadow-sm shadow-primary/30"
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -90,17 +92,27 @@ export function Header() {
           </nav>
 
           {/* Actions */}
-          <div className="flex items-center gap-2">
+          <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
+            {/* Phone — icon-only pill; the number itself lives in Contact & the footer */}
             <a
               href={siteConfig.phoneHref}
-              className="hidden md:flex items-center gap-2 text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
+              aria-label={`Appeler le ${siteConfig.phone}`}
+              title={siteConfig.phone}
+              className="hidden h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border/50 bg-background/60 text-foreground/70 shadow-sm backdrop-blur-md transition-colors hover:border-primary/40 hover:text-primary md:inline-flex lg:hidden xl:inline-flex"
             >
-              <Phone className="h-4 w-4" />
-              <span className="hidden xl:inline">{siteConfig.phone}</span>
+              <Phone className="h-4 w-4 shrink-0" />
             </a>
             <ThemeToggle />
-            <Button asChild size="sm" className="hidden sm:inline-flex rounded-full shadow-sm">
-              <a href="#contact">Demander un devis</a>
+            <Button
+              asChild
+              size="sm"
+              className="hidden shrink-0 rounded-full shadow-lg shadow-primary/20 transition-shadow hover:shadow-primary/30 sm:inline-flex"
+            >
+              <a href="#contact">
+                {/* Short label where the nav is widest, full label elsewhere */}
+                <span className="hidden lg:inline xl:hidden">Devis</span>
+                <span className="lg:hidden xl:inline">Demander un devis</span>
+              </a>
             </Button>
 
             {/* Mobile menu — always visible on screens below lg */}
