@@ -68,12 +68,12 @@ export function Header() {
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`relative px-3.5 py-2 text-sm font-medium rounded-lg transition-colors hover:text-primary ${
+                className={`relative whitespace-nowrap px-2.5 xl:px-3.5 py-2 text-sm font-medium rounded-lg transition-colors hover:text-primary ${
                   active === link.href ? 'text-primary' : 'text-foreground/70'
                 }`}
               >

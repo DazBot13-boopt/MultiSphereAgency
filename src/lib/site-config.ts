@@ -25,6 +25,7 @@ export const navLinks = [
   { label: "Accueil", href: "#accueil" },
   { label: "À propos", href: "#a-propos" },
   { label: "Services", href: "#services" },
+  { label: "Catalogue", href: "#catalogue" },
   { label: "Pourquoi nous", href: "#pourquoi-nous" },
   { label: "Réalisations", href: "#realisations" },
   { label: "Assistant", href: "#assistant" },

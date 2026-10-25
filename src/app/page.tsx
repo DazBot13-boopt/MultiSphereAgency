@@ -3,6 +3,7 @@ import { Hero } from '@/components/sections/hero'
 import { TrustedBy } from '@/components/sections/trusted-by'
 import { About } from '@/components/sections/about'
 import { Services } from '@/components/sections/services'
+import { Catalogue } from '@/components/sections/catalogue'
 import { WhyUs } from '@/components/sections/why-us'
 import { Process } from '@/components/sections/process'
 import { Portfolio } from '@/components/sections/portfolio'
@@ -36,6 +37,8 @@ export default function Home() {
         <SectionDivider variant="dots" />
         <Services />
         <SectionDivider variant="gradient" />
+        <Catalogue />
+        <SectionDivider variant="dots" />
         <WhyUs />
         <SectionDivider variant="line" />
         <Process />
